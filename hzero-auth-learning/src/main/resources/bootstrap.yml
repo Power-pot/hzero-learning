@@ -1,0 +1,24 @@
+server:
+  port: 8020
+  servlet:
+#    context-path 作用：在请求路径中都加上/oauth，如：加之前localhost:8020/hello; 加之后：localhost:8020/oauth/hello
+    context-path: /oauth
+management:
+  server:
+    port: 8021
+
+eureka:
+  instance:
+    # 以IP注册到注册中心
+    preferIpAddress: ${EUREKA_INSTANCE_PREFER_IP_ADDRESS:true}
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
+    # 服务的一些元数据信息
+    metadata-map:
+      VERSION: 1.1.2.RELEASE
+  client:
+    serviceUrl:
+      # 注册中心地址
+      defaultZone: ${EUREKA_DEFAULT_ZONE:http://localhost:8000/eureka}
+    registryFetchIntervalSeconds: 10
+    disable-delta: true

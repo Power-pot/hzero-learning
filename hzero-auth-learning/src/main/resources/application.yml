@@ -15,7 +15,7 @@ spring:
   redis:
     host: localhost
     port: ${SPRING_REDIS_PORT:6379}
-    database: ${SPRING_REDIS_DATABASE:3}
+    database: ${SPRING_REDIS_DATABASE:0}
     password: 123456
     jedis:
       pool:

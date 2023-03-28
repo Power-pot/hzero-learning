@@ -34,12 +34,13 @@ public class AuthServerApplication {
 //        System.out.println("PrivateKey >>>\n" + privateKey + "\n");
 //        System.out.println("PublicKey >>>\n" + publicKey + "\n");
 
+        
         String publicKey = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKXSnUpigf1Ule+BxND7rGktVXiO3Cog9xDO2UP6sJqywWeNTG6m+2rLkelPiej5M3ptS3QVXvHFydLHX/G+eGsCAwEAAQ==";
         String privateKey = "MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEApdKdSmKB/VSV74HE0PusaS1VeI7cKiD3EM7ZQ/qwmrLBZ41Mbqb7asuR6U+J6Pkzem1LdBVe8cXJ0sdf8b54awIDAQABAkEAotHAu+8pr/NEHZ4QARt9WPC4gd3UdFFWBtz0HHmkut/BxgNIXI8znc82GLg/ZVK4XoWMYJcOVt/JBW+I/HofgQIhAM7GGh5Tejm8rNjqC5m0TcN0IT8hFFhbaoGJ63b/2BSLAiEAzUy7pXQ/3AEQJ5m9PhHT59ACoUsCjsFD8kcvmkFVR6ECIQC771Zh5eGbhJ9dcCwnAbgERBLLvBcvz7bYEjEPsa4FzQIgXGLPfqFVq3d/AZMZqjjzlznwNQ1AVWV7YifOsCf+bIECIQCReTJ+JMTNsWV5xVnL0s9XudgyYVA6aezfZXNTzUfPgg==";
         System.out.println("PrivateKey >>>\n" + privateKey + "\n");
         System.out.println("PublicKey >>>\n" + publicKey + "\n");
 
-        
+
         String content = "123456";
         System.out.println("Content >>>\n" + content + "\n");
 

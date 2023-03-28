@@ -2,7 +2,7 @@ spring:
   application:
     name: hzero-auth-learning
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/hzero_auth?useUnicode=true&characterEncoding=utf-8&useSSL=false}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/hzero_platform?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true}
     username: ${SPRING_DATASOURCE_USERNAME:root}
     password: ${SPRING_DATASOURCE_PASSWORD:root}
     hikari:
@@ -160,8 +160,8 @@ hzero:
         certificate: MIIDEzCCAfugAwIBAgIJAKoK/heBjcOYMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNVBAoMFU9yZ2FuaXphdGlvbiwgQ049T0lEQzAeFw0xNTExMTExMDEyMTVaFw0yNTExMTAxMDEyMTVaMCAxHjAcBgNVBAoMFU9yZ2FuaXphdGlvbiwgQ049T0lEQzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANBGwJ/qpTQNiSgUglSE2UzEkUow+wS8r67etxoEhlzJZfgK/k5TfG1wICDqapHAxEVgUM10aBHRctNocA5wmlHtxdidhzRZroqHwpKy2BmsKX5Z2oK25RLpsyusB1KroemgA/CjUnI6rIL1xxFn3KyOFh1ZBLUQtKNQeMS7HFGgSDAp+sXuTFujz12LFDugX0T0KB5a1+0l8y0PEa0yGa1oi6seONx849ZHxM0PRvUunWkuTM+foZ0jZpFapXe02yWMqhc/2iYMieE/3GvOguJchJt6R+cut8VBb6ubKUIGK7pmoq/TB6DVXpvsHqsDJXechxcicu4pdKVDHSec850CAwEAAaNQME4wHQYDVR0OBBYEFK7RqjoodSYVXGTVEdLf3kJflP/sMB8GA1UdIwQYMBaAFK7RqjoodSYVXGTVEdLf3kJflP/sMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBADNZkxlFXh4F45muCbnQd+WmaXlGvb9tkUyAIxVL8AIu8J18F420vpnGpoUAE+Hy3evBmp2nkrFAgmr055fAjpHeZFgDZBAPCwYd3TNMDeSyMta3Ka+oS7GRFDePkMEm+kH4/rITNKUF1sOvWBTSowk9TudEDyFqgGntcdu/l/zRxvx33y3LMG5USD0x4X4IKjRrRN1BbcKgi8dq10C3jdqNancTuPoqT3WWzRvVtB/q34B7F74/6JzgEoOCEHufBMp4ZFu54P0yEGtWfTwTzuoZobrChVVBt4w/XZagrRtUCDNwRpHNbpjxYudbqLqpi1MQpV9oht/BpTHVJG2i0ro=
     password:
       enable-encrypt: ${HZERO_OAUTH_PASSWORD_ENABLE_ENCRYPT:true}
-      public-key: ${HZERO_OAUTH_PASSWORD_PUBLIC_KEY:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJL0JkqsUoK6kt3JyogsgqNp9VDGDp+t3ZAGMbVoMPdHNT2nfiIVh9ZMNHF7g2XiAa8O8AQWyh2PjMR0NiUSVQMCAwEAAQ==}
-      private-key: ${HZERO_OAUTH_PASSWORD_PRIVATE_KEY:MIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEAkvQmSqxSgrqS3cnKiCyCo2n1UMYOn63dkAYxtWgw90c1Pad+IhWH1kw0cXuDZeIBrw7wBBbKHY+MxHQ2JRJVAwIDAQABAkB3TKXZcVP6tSSN0UgOjLPxng99Z4xvrWJ1jdHFB7TYyUDcnOtE6GkeeMGxtszYtuZ0m5rN9r8eRvIdVUciXbQhAiEA7WGcLd+cvHHA8xNFrbT78Aq4iYm0TVTS6m05ZEOS328CIQCeetcFV8Kdb+P2Y+yWvMtbyFGhROQIFizvxM3S3TiZrQIhAJLrYPB7f9SaSyOm/+89Htk4qXJmyjM6lrgFFgpaUGL9AiB+pkCr/mSDGOYfA+AQ3rPNl5rUvI9XfxFOVAMAntYayQIhAO0hrnwtng6Ubs+58BN69vAl+sd/xugf0jsHcNgZppAb}
+      public-key: ${HZERO_OAUTH_PASSWORD_PUBLIC_KEY:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKXSnUpigf1Ule+BxND7rGktVXiO3Cog9xDO2UP6sJqywWeNTG6m+2rLkelPiej5M3ptS3QVXvHFydLHX/G+eGsCAwEAAQ==}
+      private-key: ${HZERO_OAUTH_PASSWORD_PRIVATE_KEY:MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEApdKdSmKB/VSV74HE0PusaS1VeI7cKiD3EM7ZQ/qwmrLBZ41Mbqb7asuR6U+J6Pkzem1LdBVe8cXJ0sdf8b54awIDAQABAkEAotHAu+8pr/NEHZ4QARt9WPC4gd3UdFFWBtz0HHmkut/BxgNIXI8znc82GLg/ZVK4XoWMYJcOVt/JBW+I/HofgQIhAM7GGh5Tejm8rNjqC5m0TcN0IT8hFFhbaoGJ63b/2BSLAiEAzUy7pXQ/3AEQJ5m9PhHT59ACoUsCjsFD8kcvmkFVR6ECIQC771Zh5eGbhJ9dcCwnAbgERBLLvBcvz7bYEjEPsa4FzQIgXGLPfqFVq3d/AZMZqjjzlznwNQ1AVWV7YifOsCf+bIECIQCReTJ+JMTNsWV5xVnL0s9XudgyYVA6aezfZXNTzUfPgg==}
   data:
     permission:
       # 数据库所有者模式，例如 SqlServer 下的 dbo/guest
@@ -172,3 +172,4 @@ logging:
     org.hzero: ${LOG_LEVEL:info}
     io.choerodon: ${LOG_LEVEL:warn}
     org.springframework.security: ${LOG_LEVEL:info}
+    com.netflix: warn

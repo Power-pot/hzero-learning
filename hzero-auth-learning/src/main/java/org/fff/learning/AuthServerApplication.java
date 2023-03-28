@@ -39,6 +39,7 @@ public class AuthServerApplication {
         System.out.println("PrivateKey >>>\n" + privateKey + "\n");
         System.out.println("PublicKey >>>\n" + publicKey + "\n");
 
+        
         String content = "123456";
         System.out.println("Content >>>\n" + content + "\n");
 
